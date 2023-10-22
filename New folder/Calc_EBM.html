@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="calc.css" />
+    <link rel="stylesheet" href="all.min.css">
+    <title>EBM</title>
+  </head>
+
+  <body>
+    <div class="allx">
+      <div class="top">
+        <i class="fa-solid fa-graduation-cap"></i> 
+        <h3>Calculator</h3>
+        <h1>Created by ABDELMOGHITH</h1>
+        <p> " Simply input your degrees values, and let the program effortlessly calculate the results for you . "</p>
+       
+      </div>
+      <div class="highth">
+        <div class="icon"><i class="fa-solid fa-angles-down"></i></div>
+    </div>
+      <div class="backshit">
+        <div class="allxi">
+          <div class="card">
+            <h3>Capteurs Biomédicaux :</h3>
+            <label for="">TD:</label>
+            <br />
+            <input type="number" placeholder="..." id="CapTd" maxlength="5" />
+            <br /><br />
+            <label for="">Exam:</label>
+            <br />
+            <input type="number" placeholder="..." id="CapExam" maxlength="5" />
+            <br /><br />
+            <label for="">TP :</label>
+            <br />
+            <input type="number" placeholder="..." id="CapTp" maxlength="5" />
+          </div>
+          <div class="card">
+            <h3>Electronique Analogique :</h3>
+            <label for="">TD:</label>
+            <br />
+            <input type="number" placeholder="..." id="AnaTD" maxlength="5" />
+            <br /><br />
+            <label for="">Exam:</label>
+            <br />
+            <input type="number" placeholder="..." id="AnaExam" maxlength="5" />
+            <br /><br />
+            <label for="">TP :</label>
+            <br />
+            <input type="number" placeholder="..." id="AnaTp" maxlength="5" />
+          </div>
+          <div class="card">
+            <h3>Traitement de Signal :</h3>
+            <label for="">TD:</label>
+            <br />
+            <input type="number" placeholder="..." id="TraitTd" maxlength="5" />
+            <br /><br />
+            <label for="">Exam:</label>
+            <br />
+            <input
+              type="number"
+              placeholder="..."
+              id="TraitExam"
+              maxlength="5"
+            />
+            <br /><br />
+            <label for="">TP :</label>
+            <br />
+            <input type="number" placeholder="..." id="TraitTp" maxlength="5" />
+          </div>
+          <div class="card">
+            <h3>Asservissement et Régulation :</h3>
+            <label for="">TD:</label>
+            <br />
+            <input type="number" placeholder="..." id="AsserTd" maxlength="5" />
+            <br /><br />
+            <label for="">Exam:</label>
+            <br />
+            <input
+              type="number"
+              placeholder="..."
+              id="AsserExam"
+              maxlength="5"
+            />
+          </div>
+          <div class="card">
+            <h3>Mesures Electronique :</h3>
+            <label for="">TD:</label>
+            <br />
+            <input type="number" placeholder="..." id="MesurTd" maxlength="5" />
+            <br /><br />
+            <label for="">Exam:</label>
+            <br />
+            <input
+              type="number"
+              placeholder="..."
+              id="MesurExam"
+              maxlength="5"
+            />
+          </div>
+
+          <div class="card">
+            <br /><br />
+            <h3>CAO Electronique Médicale :</h3>
+            <label for="">TP :</label>
+            <br />
+            <input type="number" placeholder="..." id="CAOTp" maxlength="5" />
+          </div>
+          <div class="cardx" id="Manage">
+            <br /><br />
+            <h3>Management en santé :</h3>
+            <label for="">Exam:</label>
+            <br />
+            <input
+              type="number"
+              placeholder="..."
+              id="ManageExam"
+              maxlength="5"
+            />
+          </div>
+          <div class="card">
+            <br /><br />
+            <h3>Plateau Technique hospitalier :</h3>
+            <label for="">Exam:</label>
+            <br />
+            <input
+              type="number"
+              placeholder="..."
+              id="PlateauExam"
+              maxlength="5"
+            />
+          </div>
+
+          <div class="cardx" id="Manage">
+            <br /><br />
+            <h3>Imagerie Médicale :</h3>
+            <label for="">Exam:</label>
+            <br />
+            <input
+              type="number"
+              placeholder="..."
+              id="ImageExam"
+              maxlength="5"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="calcin">
+        <input type="button" value="Done" id="BtnDone" />
+      </div>
+      <div class="tables10">
+        <div class="card2">
+          <div class="card10m">
+            <p>The Result :</p>
+            <p id="Hresult">...</p>
+          </div>
+        </div>
+        <div class="card2">
+          <div class="card11m">
+            <p>Moyenne UE 1 :</p>
+            <p id="Hresult1">...</p>
+          </div>
+        </div>
+        <div class="card2">
+          <div class="card12m">
+            <p>Moyenne UE 2 :</p>
+            <p id="Hresult2">...</p>
+          </div>
+        </div>
+        <div class="card2">
+          <div class="card14m">
+            <p>Moyenne UE 3 :</p>
+            <p id="Hresult4">...</p>
+          </div>
+        </div>
+        <div class="card2">
+          <div class="card13m">
+            <p>Tp :</p>
+            <p id="Hresult3">...</p>
+          </div>
+        </div>
+      </div>
+      <div class="calcinx">
+        <a href="details.html" target="_blank">
+          <input type="button" value="Details" id="BtnDonex" />
+        </a>
+      </div>
+      <!-- <div class="result">
+        <h3>The Result is :</h3>
+        <h2 id="Hresult">...</h2> -->
+
+        <!-- <h3>Les Moyens De Chaque Module :</h3>
+        <br />
+        <h3>Capteur :</h3>
+        <h2 id="Hresult1">...</h2>
+        <h3>E, Analogique :</h3>
+        <h2 id="Hresult2">...</h2>
+        <h3>Traitement :</h3>
+        <h2 id="Hresult3">...</h2>
+        <h3>Asservissement :</h3>
+        <h2 id="Hresult4">...</h2>
+        <h3>Mesures :</h3>
+        <h2 id="Hresult4">...</h2>
+        <h3>CAO :</h3>
+        <h2 id="Hresult3">...</h2>
+        <h3>Management en santé :</h3>
+        <h2 id="Hresult3">...</h2>
+        <h3>Plateau t.h :</h3>
+        <h2 id="Hresult3">...</h2>
+        <h3>Imagerie :</h3>
+        <h2 id="Hresult3">...</h2> -->
+
+        <!--  -->
+
+        <!-- <h3>Capteurs, E.Analogique , Traitement :</h3>
+        <h2 id="Hresult1">...</h2>
+        <h3>Asservissement , Mesures :</h3>
+        <h2 id="Hresult2">...</h2>
+        <h3>TP :</h3>
+        <h2 id="Hresult3">...</h2> -->
+        <!-- <h3>Discription :</h3>
+          <h2 id="Hresult4">...</h2> -->
+      </div>
+    </div>
+
+    <!-- <script src="Calc.js"></script> -->
+    <script src="Method_EBM.js"></script>
+  </body>
+</html>
