@@ -6,14 +6,12 @@ document.querySelectorAll('input[type="number"]').forEach((input) => {
 });
 
 let inputs = document.querySelectorAll('input[type="number"]');
+
 inputs.forEach((num, index) => {
   num.dataset.id = index;
 
   num.addEventListener("keypress", () => {
-    inputs[parseInt(num.dataset.id) + 1].focus();
-  });
-  num.addEventListener("keyup", () => {
-    if (num.value.length == 5) {
+    if (event.key === "Enter") {
       inputs[parseInt(num.dataset.id) + 1].focus();
     }
   });
