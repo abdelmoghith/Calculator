@@ -4,6 +4,9 @@ body {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+:root {
+  color-scheme: light;
+}
 .top {
   text-align: center;
   display: block;
