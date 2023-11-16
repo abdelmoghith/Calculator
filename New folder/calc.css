@@ -11,6 +11,9 @@ body {
   text-align: center;
   display: block;
 }
+.top i {
+  color: hsl(180, 62%, 55%);
+}
 .top h3 {
   font-size: 32px;
   font-weight: lighter;
