@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Cairo", sans-serif;
+}
+
+.top {
+  margin-top: 100px;
+  text-align: center;
+  display: block;
+}
+.top h3 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  color: rgb(67, 39, 39);
+  font-family: "Caveat", cursive;
+}
+
+.grid6 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 700px;
+  height: 300px;
+  gap: 100px;
+  padding: 50px;
+  margin: 10px auto;
+}
+.grid6 a .card40 {
+  position: relative;
+  box-shadow: 0 12px 20px 0 rgb(0 0 0 / 13%), 0 2px 4px 0 rgb(0 0 0 / 12%);
+  transition-duration: 0.4s;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.grid6 a .card40::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  top: 0;
+  transition: 0.4s;
+  width: 0%;
+  right: 50%;
+  transform: translate(50%, -50%);
+  background-color: #03a8f4;
+}
+.grid6 a .card40:hover::after {
+  width: 100%;
+}
+.grid6 a .card40:hover {
+  margin-top: -14px;
+  margin-bottom: 14px;
+}
+.up {
+  width: 100%;
+  height: 225px;
+  color: white;
+  background-color: white;
+  text-align: center;
+  display: grid;
+  place-content: center;
+  border-radius: 25px;
+}
+.up i {
+  font-size: 60px;
+  color: #d5d5d5;
+}
+.up h2 {
+  color: #03a8f4;
+  margin: 10px;
+}
+.down {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  background-color: #f9f9f9;
+  color: #03a8f4;
+  justify-content: space-between;
+  padding-right: 15px;
+  align-items: center;
+}
+.down p:first-of-type {
+  font-size: 15px;
+  margin: 0;
+  padding: 5px;
+  color: white;
+  background-color: #03a8f4;
+  width: 100px;
+  font-weight: bold;
+  position: relative;
+}
+.down p:first-of-type::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 60px;
+  right: -43px;
+  top: 0;
+  background-color: #d5d5d5;
+  transform: skew(-30deg);
+}
+@media (min-width: 0px) and (max-width: 768px) {
+  .grid6 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 350px;
+    height: 350px;
+    padding: 50px;
+    margin-bottom: 40px;
+  }
+  .up {
+    height: 225px;
+    margin: 10px auto;
+  }
+  html {
+    overflow-x: hidden;
+  }
+  body {
+    height: 110vh;
+  }
+}
