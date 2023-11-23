@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" type="x-icon" href="icons8-gear-96.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="calc.css" />
+    <link rel="stylesheet" href="all.min.css">
+    <title>EBM</title>
+  </head>
+
+  <body>
+    <div class="html">
+    <div class="allx">
+      <div class="top">
+        <i class="fa-solid fa-graduation-cap"></i> 
+        <h3>Calculator</h3>
+        <h1>Created by ABDELMOGHITH</h1>
+        <p> " Simply input your degrees values, and let the program effortlessly calculate the results for you . "</p>
+       
+      </div>
+      <div class="highth">
+        <div class="icon"><i class="fa-solid fa-angles-down"></i></div>
+    </div>
+      <div class="backshit">
+        <div class="allxi">
+          <div class="card">
+            <h3>Capteurs Biomédicaux :</h3>
+            <label for="">CC :</label>
+            <br />
+            <input type="number" placeholder="..." id="CapTd" maxlength="5" />
+            <br /><br />
+            <label for="">Exam:</label>
+            <br />
+            <input type="number" placeholder="..." id="CapExam" maxlength="5" />
+            
+          </div>
+          <div class="card">
+            <h3>Electronique Analogique :</h3>
+            <label for="">CC :</label>
+            <br />
+            <input type="number" placeholder="..." id="AnaTD" maxlength="5" />
+            <br /><br />
+            <label for="">Exam:</label>
+            <br />
+            <input type="number" placeholder="..." id="AnaExam" maxlength="5" />
+            <br /><br />
+            <label for="">TP :</label>
+            <br />
+            <input type="number" placeholder="..." id="AnaTp" maxlength="5" />
+          </div>
+          <div class="card">
+            <h3>Traitement de Signal :</h3>
+            <label for="">CC :</label>
+            <br />
+            <input type="number" placeholder="..." id="TraitTd" maxlength="5" />
+            <br /><br />
+            <label for="">Exam:</label>
+            <br />
+            <input
+              type="number"
+              placeholder="..."
+              id="TraitExam"
+              maxlength="5"
+            />
+            <br /><br />
+            <label for="">TP :</label>
+            <br />
+            <input type="number" placeholder="..." id="TraitTp" maxlength="5" />
+          </div>
+          <div class="card">
+            <h3>Asservissement et Régulation :</h3>
+            <label for="">CC :</label>
+            <br />
+            <input type="number" placeholder="..." id="AsserTd" maxlength="5" />
+            <br /><br />
+            <label for="">Exam:</label>
+            <br />
+            <input
+              type="number"
+              placeholder="..."
+              id="AsserExam"
+              maxlength="5"
+            />
+          </div>
+          <div class="card">
+            <h3>Mesures Electronique :</h3>
+            <label for="">CC :</label>
+            <br />
+            <input type="number" placeholder="..." id="MesurTd" maxlength="5" />
+            <br /><br />
+            <label for="">Exam:</label>
+            <br />
+            <input
+              type="number"
+              placeholder="..."
+              id="MesurExam"
+              maxlength="5"
+            />
+            <br><br>
+            
+            <label for="">TP :</label>
+            <br />
+            <input type="number" placeholder="..." id="CapTp" maxlength="5" />
+          </div>
+
+          <div class="card">
+            <br /><br />
+            <h3>CAO Electronique Médicale :</h3>
+            <label for="">TP :</label>
+            <br />
+            <input type="number" placeholder="..." id="CAOTp" maxlength="5" />
+          </div>
+          <div class="cardx" id="Manage">
+            <br /><br />
+            <h3>Management en santé :</h3>
+            <label for="">Exam:</label>
+            <br />
+            <input
+              type="number"
+              placeholder="..."
+              id="ManageExam"
+              maxlength="5"
+            />
+          </div>
+          <div class="card">
+            <br /><br />
+            <h3>Plateau Technique hospitalier :</h3>
+            <label for="">Exam:</label>
+            <br />
+            <input
+              type="number"
+              placeholder="..."
+              id="PlateauExam"
+              maxlength="5"
+            />
+          </div>
+
+          <div class="cardx" id="Manage">
+            <br /><br />
+            <h3>Imagerie Médicale :</h3>
+            <label for="">Exam:</label>
+            <br />
+            <input
+              type="number"
+              placeholder="..."
+              id="ImageExam"
+              maxlength="5"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="calcin">
+        <input type="button" value="Done" id="BtnDone" />
+      </div>
+      <div class="tables10">
+        <div class="card2">
+          <div class="card10m">
+            <p>The Result :</p>
+            <p id="Hresult">...</p>
+          </div>
+        </div>
+        <div class="card2">
+          <div class="card11m">
+            <p id="ue1">Moyenne UE 1 :</p>
+            <p id="Hresult1">...</p>
+          </div>
+          <ul id="ul1">
+            <li>Capteurs : <span id="spcap"></span></li>
+            <li>Electonique <br> Analogique : <span id="spea"></span></li>
+            <li>Traitement : <span id="sptr"></span></li>
+          </ul>
+        </div>
+        <div class="card2">
+          <div class="card12m">
+            <p id="ue2">Moyenne UE 2 :</p>
+            <p id="Hresult2">...</p>
+          </div>
+          <ul id="ul2">
+            <li>Asservissement : <span id="spanasser"></span></li>
+            <li>Mesures : <span id="spanmesure"></span></li>
+            
+          </ul>
+        </div>
+        <div class="card2">
+          <div class="card14m">
+            <p id="ue3">Moyenne UE 3 :</p>
+            <p id="Hresult4">...</p>
+          </div>
+          <ul id="ul3">
+            <li>Plateau <br>Technique : <span id="spanplateau"></span></li>
+            <li>Imagerie : <span id="spanimage"></span></li>
+          </ul>
+        </div>
+        <div class="card2">
+          <div class="card13m">
+            <p>Tp :</p>
+            <p id="Hresult3">...</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+   <div class="loader"></div> 
+   <div class="loader"></div> 
+    <!-- <script src="Calc.js"></script> -->
+    
+    <script src="Method_EBM.js"></script>
+  </body>
+</html>
