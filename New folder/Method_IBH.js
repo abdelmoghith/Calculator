@@ -106,6 +106,7 @@ let Final = (document.getElementById("BtnDone").onclick = function () {
   result =
     (first * 5 + secound * 4 + tp * 6 + Imagerie * 1 + Management * 1) / 17;
 
+  setTimeout(() => {
   document.getElementById("Hresult").textContent = `${result.toFixed(2)}`;
   // if (result < 10) {
   //   document.getElementById("Hresult").style.color = "red";
@@ -131,7 +132,6 @@ let Final = (document.getElementById("BtnDone").onclick = function () {
   document.getElementById("spanres").textContent = `${(Réseaux / 2).toFixed(
     2
   )}`;
-  setTimeout(() => {
     document.getElementById("spanweb").textContent = `${web.toFixed(2)}`;
     document.getElementById("spanjava").textContent = `${(Java / 2).toFixed(
       2
