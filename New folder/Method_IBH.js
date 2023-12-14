@@ -143,7 +143,18 @@ let Final = (document.getElementById("BtnDone").onclick = function () {
     tpweb == "" ||
     Imagerie == "" ||
     Management == "" ||
-    result > 20
+    result > 20 ||
+    (Réseaux * 1) / 2 > 20 ||
+    (Java * 1) / 2 > 20 ||
+    web > 20 ||
+    Analyse > 20 ||
+    Apprentissage > 20 ||
+    (Systèmes * 1) / 2 > 20 ||
+    (tpAnalyse * 1) / 2 > 20 ||
+    (tpApprentissage * 1) / 2 > 20 ||
+    (tpRéseaux * 1) / 2 > 20 ||
+    Imagerie > 20 ||
+    Management > 20
   ) {
     erreur.style.display = "block";
     ul1.style.display = "none";
