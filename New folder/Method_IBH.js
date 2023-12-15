@@ -123,7 +123,7 @@ let Final = (document.getElementById("BtnDone").onclick = function () {
   // })
 
   if (
-    tdSystèmes == "" ||
+   tdSystèmes == "" ||
     tdRéseaux == "" ||
     tdWeb == "" ||
     examSystèmes == "" ||
@@ -144,12 +144,21 @@ let Final = (document.getElementById("BtnDone").onclick = function () {
     Imagerie == "" ||
     Management == "" ||
     result > 20 ||
-    (Réseaux * 1) / 2 > 20 ||
-    (Java * 1) / 2 > 20 ||
-    web > 20 ||
-    Analyse > 20 ||
-    Apprentissage > 20 ||
-    (Systèmes * 1) / 2 > 20 ||
+    tdRéseaux > 20 ||
+    examRéseaux > 20 ||
+    tdJava > 20 ||
+    examJava > 20 ||
+    tpJava > 20 ||
+    tdSystèmes > 20 ||
+    examSystèmes > 20 ||
+    tdWeb > 20 ||
+    examWeb > 20 ||
+    tpweb > 20 ||
+    tdAnalyse > 20 ||
+    examAnalyse > 20 ||
+    tdApprentissage > 20 ||
+    td2Apprentissage > 20 ||
+    examApprentissage > 20 ||
     (tpAnalyse * 1) / 2 > 20 ||
     (tpApprentissage * 1) / 2 > 20 ||
     (tpRéseaux * 1) / 2 > 20 ||
