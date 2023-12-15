@@ -129,16 +129,33 @@ let Final = (document.getElementById("BtnDone").onclick = function () {
     TraitExam == "" ||
     AsserTd == "" ||
     AsserExam == "" ||
-    CapTp == "" ||
+    tpCapteur == "" ||
     MesurTd == "" ||
     MesurExam == "" ||
-    AnaTp == "" ||
-    TraitTp == "" ||
-    CAOTp == "" ||
+    tpAnalogique == "" ||
+    tpTraitemenet == "" ||
+    tpCOA == "" ||
     Imagerie == "" ||
     PlateauExam == "" ||
     Management == "" ||
-    result > 20
+    result > 20 ||
+    PlateauExam > 20 ||
+    Imagerie > 20 ||
+    Management > 20 ||
+    CapTd > 20 ||
+    CapExam > 20 ||
+    AnaTD > 20 ||
+    AnaExam > 20 ||
+    tpAnalogique > 20 ||
+    TraitTd > 20 ||
+    TraitExam > 20 ||
+    tpTraitemenet > 20 ||
+    AsserTd > 20 ||
+    AsserExam > 20 ||
+    MesurTd > 20 ||
+    MesurExam > 20 ||
+    tpCOA > 20 ||
+    tpCapteur > 20
   ) {
     ul1.style.display = "none";
     ul2.style.display = "none";
