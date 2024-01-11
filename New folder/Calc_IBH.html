@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" type="x-icon" href="icons8-code-96.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="calc.css" />
+    <link rel="stylesheet" href="all.min.css">
+    <title>IBH</title>
+  </head>
+
+  <body>
+    <div class="html">
+    <div class="allx">
+      <div class="top">
+        <i class="fa-solid fa-graduation-cap"></i> 
+        <h3>Calculator</h3>
+        <h1>Created by ABDELMOGHITH</h1>
+        <p> " Simply input your degrees values, and let the program effortlessly calculate the results for you . "</p>
+      </div>
+      <div class="highth">
+        <div class="icon"><i class="fa-solid fa-angles-down"></i></div>
+    </div>
+      <div class="backshit">
+        <div class="allxi">
+          <div class="card">
+            <h3>Systèmes d’information hospitaliers</h3>
+            <label for="">CC :</label>
+            <br />
+            <input type="number" placeholder="..." id="SysTd" maxlength="5" value="16.25" />
+            <br /><br />
+            <label for="">Exam:</label>
+            <br />
+            <input type="number" placeholder="..." id="SysExam" maxlength="5" value="" />
+          </div>
+          <div class="card">
+            <h3>Réseaux et Télémédecine </h3>
+            <label for="">CC :</label>
+            <br />
+            <input type="number" placeholder="..." id="ResTd" maxlength="5" value="8" />
+            <br /><br />
+            <label for="">Exam:</label>
+            <br />
+            <input type="number" placeholder="..." id="ResExam" maxlength="5" value=""/>
+            <br /><br />
+            <label for="">TP :</label>
+            <br />
+            <input type="number" placeholder="..." id="ResTp" maxlength="5" value="13"/>
+          </div>
+          <div class="card">
+            <h3>Web et ontologie médicale </h3>
+            <br />
+            <label for="">CC :</label>
+            <br />
+            <input type="number" placeholder="..." id="WebTd" maxlength="5" value="18"/>
+            <br /><br />
+            <label for="">Exam:</label>
+            <br />
+            <input type="number" placeholder="..." id="WebExam" maxlength="5" value=""/>
+           
+          </div>
+          <div class="card">
+            <h3>Java avancé </h3>
+            <label for="">TP :</label>
+            <br />
+            <input type="number" placeholder="..." id="JavaTd" maxlength="5" value="14" />
+            <br /><br />
+            <label for="">Exam:</label>
+            <br />
+            <input
+              type="number"
+              placeholder="..."
+              id="JavaExam"
+              maxlength="5" value=""
+            />
+          </div>
+          <div class="card">
+            <h3>Analyse des données médicales </h3>
+            <label for="">CC :</label>
+            <br />
+            <input type="number" placeholder="..." id="AnalTd" maxlength="5" value="10.75" />
+            <br /><br />
+            <label for="">Exam:</label>
+            <br />
+            <input
+              type="number"
+              placeholder="..."
+              id="AnalExam"
+              maxlength="5" value=""
+            />
+            <br /><br />
+            <label for="">TP :</label>
+            <br />
+            <input type="number" placeholder="..." id="AnalTp" maxlength="5" value="17"/>
+          </div>
+          <div class="card">
+            <h3>Apprentissage Artificiel </h3>
+            <label for="">CC:</label>
+            <br />
+            <input
+              type="number"
+              placeholder="..."
+              id="ApprenTd"
+              maxlength="5" value="11"
+            />
+           
+            <br /><br />
+            <label for="">Exam:</label>
+            <br />
+            <input
+              type="number"
+              placeholder="..."
+              id="ApprenExam"
+              maxlength="5" value=""
+            />
+            <br /><br />
+            <label for="">TP :</label>
+            <br />
+            <input
+              type="number"
+              placeholder="..."
+              id="ApprenTp"
+              maxlength="5" value="14.75"
+            />
+          </div>
+          <div class="cardx">
+            <br /><br />
+            <h3>Imagerie Médicale </h3>
+            <label for="">Exam:</label>
+            <br />
+            <input
+              type="number"
+              placeholder="..."
+              id="ImageExam"
+              maxlength="5" value="10"
+            /> 
+          </div>
+
+          <div class="cardv" style="opacity: 0"></div>
+          <div class="cardx" id="Manage">
+            <br /><br />
+            <h3>Management en santé </h3>
+            <label for="">Exam:</label>
+            <br />
+            <input
+              type="number"
+              placeholder="..."
+              id="ManageExam"
+              maxlength="5" value="15"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="calcin">
+        <input type="button" value="Done" id="BtnDone" />
+      </div>
+      <p id="erreur">you've forgoten something <br>or used a wrong value </p>
+
+      <div class="tables10">
+        <div class="card2">
+          <div class="card10m">
+            <p>The Result :</p>
+            <p id="Hresult">...</p>
+          </div>
+        </div>
+        <div class="card2">
+          <div class="card11m">
+            <p id="ue1">Moyenne UE 1 :</p>
+            <p id="Hresult1">...</p>
+          </div>
+          <ul id="ul1">
+            <li>Systèmes :<span id="spansys"></span></li>
+            <li>Réseaux :<span id="spanres"></span></li>
+            <li>Web :<span id="spanweb"></span></li>
+          </ul>
+        </div>
+        <div class="card2">
+          <div class="card12m">
+            <p id="ue2">Moyenne UE 2 :</p>
+            <p id="Hresult2">...</p>
+          </div>
+          <ul id="ul2">
+            <li>Java :<span id="spanjava"></span></li>
+            <li>Analyse :<span id="spanana"></span></li>
+            <li>Apprentissage :<span id="spanappren"></span></li>
+          </ul>
+        </div>
+        <div class="card2">
+          <div class="card13m">
+            <p>Tp :</p>
+            <p id="Hresult3">...</p>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+    </div>
+    <div class="loader"></div> 
+    <!-- <script src="Calc.js"></script> -->
+    <script src="Method_IBH.js"></script>
+  </body>
+</html>
